@@ -1,11 +1,11 @@
 import React from 'react'
-import Posting from './Posting'
+import Posting from '../Posting/Posting'
 
-function Gallery() {
+function Gallery({ postings }) {
     return (
         <div>
             <h1>Gallery</h1>
-            <Posting />
+            <Posting posts={postings} />
         </div>
     )
 }

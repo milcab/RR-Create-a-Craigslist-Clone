@@ -1,4 +1,5 @@
 // Import data
+import { postings } from './postings';
 
 // Import components
 import './App.css';
@@ -14,7 +15,7 @@ function App() {
       <div className="App">
         <Searchbar />
         <Directory />
-        <Gallery />
+        <Gallery postings={postings} />
         <Sidebar />
       </div>
     </div>
